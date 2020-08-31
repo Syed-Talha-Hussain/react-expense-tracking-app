@@ -3,7 +3,7 @@ import { Transaction } from './Transaction';
 
 import { GlobalContext } from '../Context/Global_State'
 
-export const Transaction_History = () => {
+export const TransactionHistory = () => {
   const { transactions } = useContext(GlobalContext);
 
     return (

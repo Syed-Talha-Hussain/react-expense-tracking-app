@@ -1,9 +1,9 @@
 import React from 'react';
 import { Header } from './Components/Header';
-import { Account_Balance } from './Components/Account_Balance';
+import { AccountBalance } from './Components/AccountBalance';
 import { IncomeExpense } from './Components/IncomeExpense';
-import { Transaction_History } from './Components/Transaction_History';
-import { Add_Transaction } from './Components/Add_Transaction';
+import { TransactionHistory } from './Components/TransactionHistory';
+import { AddTransaction } from './Components/AddTransaction';
 
 // Global Provider
 import { GlobalProvider } from './Context/Global_State'
@@ -16,10 +16,10 @@ function App() {
     <GlobalProvider>
       <Header />
       <div className="container">
-      <Account_Balance />
+      <AccountBalance />
       <IncomeExpense />
-      <Transaction_History />
-      <Add_Transaction />
+      <TransactionHistory />
+      <AddTransaction />
       </div>
     </GlobalProvider>
   );

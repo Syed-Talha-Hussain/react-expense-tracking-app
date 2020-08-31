@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { GlobalContext } from '../Context/Global_State';
 
 
-export const Add_Transaction = () => {
+export const AddTransaction = () => {
   const [text, setText] = useState('');
   const [amount, setAmount] = useState();
 
