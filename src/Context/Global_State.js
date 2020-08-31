@@ -37,39 +37,3 @@ export const GlobalProvider =({children}) => {
         {children}
     </GlobalContext.Provider>);
 }
-
-
-// import React, { createContext, useReducer } from 'react';
-
-// // import Reducer
-// import AppReducer from './AppReducer'
-
-// // Initial state
-// const initialState = {
-//     transcations: [
-//         { id: 1, text: "Maths", amount: -20 },
-//         { id: 2, text: "Physics", amount: 300 },
-//         { id: 3, text: "Urdu", amount: 250 },
-//         { id: 4, text: "Eng", amount: -130 }
-//     ]
-// }
-
-// // create Context
-// export const GlobalContext = createContext(initialState);
-
-// // create Provider for GlobalContext
-// export const GlobalProvider = ({ children }) => {
-
-//     const [state, dispatch] = useReducer(AppReducer, initialState)
-
-//     return (
-//         <GlobalContext.Provider value={
-//             { 
-//                 transcations: state.transactions 
-//             }
-//         }>
-//             {children}
-//         </GlobalContext.Provider>
-//     )
-
-// }

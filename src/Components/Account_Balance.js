@@ -16,16 +16,3 @@ export const Account_Balance = () => {
         </>
     )
 }
-
-
-
-// import React from 'react'
-
-// export const Account_Balance = () => {
-//     return (
-//         <div>
-//             <h3>Account Balance</h3>
-//             <h1>$0.00</h1>
-//         </div>
-//     )
-// }
