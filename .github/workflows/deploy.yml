@@ -1,0 +1,32 @@
+name: Bootcamp React Expense Tracking App
+ 
+on:
+  push:
+    branches: [ master ]
+ 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v2
+ 
+    - name: Installing NPM
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: 12  
+ 
+    - name: Github action for yarn
+      uses: Borales/actions-yarn@v2.1.0
+      with:
+        cmd: install # will run `yarn install` command
+    
+    - name: Creating Build
+      run: yarn build
+
+    - name: Installing Surge
+      run: npm install -g surge
+    
+    - name: Deploying on Surge
+      run: surge ./build http://react-expense-tracking-app.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
